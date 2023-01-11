@@ -1,0 +1,31 @@
+.alert-box{
+    background: yellow;
+    width: 70%;
+    height: 2rem;
+    left:0%;
+    position: absolute;
+    border-radius:0.5rem;
+    border:0.1rem solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top:-60%;
+    transition: all 3s ease;
+    
+}
+.process{
+    width: 100%;
+    background-color: aqua;
+    position: absolute;
+    height: 0.5rem;
+    bottom: 0%;
+    left: 0%;
+    overflow: hidden;
+}
+.multi-process{
+    background-color: black;
+    width: 0%;
+    height: 100%;
+    transition: all 7s ease;
+ 
+}
