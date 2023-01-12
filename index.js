@@ -20,11 +20,11 @@ const TodoList=()=>{
     {
         const List=document.createElement("li");
         const firstNameList=document.createElement("h1");
-        firstNameList.innerText=item.firstname;
+        firstNameList.innerText=`First Name: ${item.firstname}`;
         const LastNameList=document.createElement("h3");
-        LastNameList.innerText=item.lastName;
+        LastNameList.innerText=`Last name: ${item.lastName}`;
         const phoneNumberList=document.createElement("p");
-phoneNumberList.innerText=item.phoneNumber;
+phoneNumberList.innerText=`Phone Number: ${item.phoneNumber}`;
         List.appendChild(firstNameList);
         List.appendChild(LastNameList);
         List.appendChild(phoneNumberList);
@@ -58,8 +58,16 @@ Alert.style.top="-60%";
     GetElement.innerHTML="";
     ArrayList.push(form);
     TodoList();
+    FirstName.value="";
+    LastName.value="";
+    PhoneNumber.value="";
 
+    localStorage.setItem("item",JSON.stringify(ArrayList));
    
+}
+const saveList=()=>{
+    const data=localStorage.getItem("item")
+    
 }
 console.log(form);
 })
